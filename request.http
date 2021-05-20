@@ -1,0 +1,44 @@
+###
+GET http://localhost:9000/prospectos HTTP/1.1
+
+###
+GET http://localhost:9000/prospectos/especifico/3 HTTP/1.1
+
+###
+POST http://localhost:9000/prospectos HTTP/1.1
+Content-Type: application/json
+
+{
+    "prospecto_nombre": "Cristian",
+    "prospecto_apellido1": "Uriarte",
+    "prospecto_apellido2": "Cazares",
+    "prospecto_calle": "Libertad",
+    "prospecto_numero": "2598",
+    "prospecto_colonia": "Las Quintas",
+    "prospecto_CP": 58967,
+    "prospecto_telefono": 66789568425,
+    "prospecto_RFC":"DAS95A3W5AG",
+    "prospecto_imgUrl":"https://i.ibb.co/xFRwsMp/daniela-kreimer.jpg[/img][/url]",
+    "prospecto_status":"Enviado"
+}
+
+###
+DELETE http://localhost:9000/prospectos/4 HTTP/1.1
+
+###
+PUT http://localhost:9000/prospectos/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "prospecto_nombre": "Roberto",
+    "prospecto_apellido1": "Cazares",
+    "prospecto_apellido2": "Pacheco",
+    "prospecto_calle": "Libertad",
+    "prospecto_numero": "2598",
+    "prospecto_colonia": "Las Quintas",
+    "prospecto_CP": 58967,
+    "prospecto_telefono": 66789568425,
+    "prospecto_RFC":"DAS95A3W5AG",
+    "prospecto_imgUrl":"https://www.shutterstock.com/es/image-photo/fitness-meditation-healthy-lifestyle-concept-indian-1418433128",
+    "prospecto_status":"Autorizado"
+}
